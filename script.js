@@ -1,10 +1,9 @@
-// fetching the data :
-
 document.addEventListener("DOMContentLoaded", () => {
-  // Fetch planets data from the API
+  // Once the DOM is ready fetch planets data from the API
   fetchPlanetsData();
 });
 
+//fetching planet data from the API
 async function fetchPlanetsData() {
   try {
     const apiKey = await getApiKey();
@@ -26,7 +25,7 @@ async function fetchPlanetsData() {
     console.error(error.message);
   }
 }
-
+//This function is responsible for fetching an API key by making a POST request to another API endpoint
 async function getApiKey() {
   try {
     const response = await fetch(
@@ -47,7 +46,7 @@ async function getApiKey() {
   }
 }
 
-// Add click event listeners to each planet div
+// This code selects all HTML elements with the class "planet" and adds a click event listener to each
 const planetDivs = document.querySelectorAll(".planet");
 planetDivs.forEach((planetDiv) => {
   planetDiv.addEventListener("click", () => {
@@ -65,7 +64,6 @@ async function fetchPlanetDetails(planetId) {
         method: "GET",
         headers: {
           "x-zocom": apiKey,
-          // If the API expects other headers, add them here
         },
       }
     );
@@ -94,7 +92,7 @@ async function fetchPlanetDetails(planetId) {
     console.error(error.message);
   }
 }
-
+// what to show in the overly
 function displayPlanetDetails(planetDetails) {
   const overlayContent = document.getElementById("overlay-content");
   overlayContent.innerHTML = `
@@ -138,7 +136,7 @@ function displayPlanetDetails(planetDetails) {
     }</p>
   </div>
   `;
-
+  // show the overly
   const overlay = document.getElementById("overlay");
   overlay.style.display = "flex";
 }
