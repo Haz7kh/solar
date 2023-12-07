@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Solar System</title>
+  </head>
+  <body>
+    <div class="subtracted-half-circle"></div>
+    <div class="solar-system">
+      <div id="merkurius" class="planet"></div>
+      <div id="venus" class="planet"></div>
+      <div id="jorden" class="planet"></div>
+      <div id="mars" class="planet"></div>
+      <div id="jupiter" class="planet"></div>
+      <div id="saturnus" class="planet"></div>
+      <div id="uranus" class="planet"></div>
+      <div id="neptunus" class="planet"></div>
+
+      <!-- Overlay Container -->
+      <div class="overlay" id="overlay">
+        <div class="subtracted-overly"></div>
+        <div class="subtracted-overly-1"></div>
+        <div class="subtracted-overly-2"></div>
+        <div class="planet-details" id="overlay-content">
+          <!-- Planet details go here -->
+          <p>This is the overlay content.</p>
+        </div>
+        <button onclick="closeOverlay()" class="close-btn">x</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
