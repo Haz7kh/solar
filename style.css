@@ -185,7 +185,7 @@ body {
 
 /* Mobile Styles */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 780px) {
   .solar-system {
     flex-direction: column;
     gap: 10px;
@@ -244,7 +244,7 @@ body {
   .line {
     margin: 8px 0;
   }
-
+  /* delet the subtracted in mobile  */
   .subtracted-half-circle,
   .subtracted-overly,
   .subtracted-overly-1,
