@@ -180,3 +180,76 @@ body {
   left: 0%;
   transform: translateX(-73%);
 }
+
+/* mobile style  */
+
+/* Mobile Styles */
+
+@media only screen and (max-width: 600px) {
+  .solar-system {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .planet {
+    width: 40px;
+    height: 40px;
+  }
+
+  #jupiter {
+    width: 120px;
+    height: 120px;
+  }
+
+  #saturnus {
+    width: 90px;
+    height: 90px;
+  }
+
+  #uranus,
+  #neptunus {
+    width: 40px;
+    height: 40px;
+  }
+
+  .overlay {
+    align-items: center;
+  }
+
+  .planet-details {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .title {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .info-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto);
+  }
+
+  .close-btn {
+    font-size: 14px;
+    padding: 3px 6px;
+  }
+
+  .line {
+    margin: 8px 0;
+  }
+
+  .subtracted-half-circle,
+  .subtracted-overly,
+  .subtracted-overly-1,
+  .subtracted-overly-2 {
+    width: 0px;
+    height: 0px;
+  }
+}
